@@ -1,10 +1,11 @@
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
+import Novedades from './components/Novedades';
 
 
 export function Titulo(){
   return(
-    <div>Soy el titulo</div>
+    <div>PapaBear Supply</div>
   )
 }
 
@@ -14,6 +15,8 @@ function App() {
         <>
 
           <Navbar />
+
+          <Novedades />
 
         </>
   );
