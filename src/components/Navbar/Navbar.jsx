@@ -1,16 +1,27 @@
 import React from 'react'
+import carrito from './carrito.png'
 
-const NavBar = () => {
+export default function Navbar() {
     return (
-        <div>
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div style={{color: "white", width: "500px"}}>
+                <h1>PapaBear supply</h1>
+            </div>
 
-            <button className='Navbar__button'> Menú </button>
-            <button className='Navbar__button'> Productos </button>
-            <button className='Navbar__button'> Sobre Nosotros </button>
-            <button className='Navbar__button'> Preguntas Frecuentes </button>
-
-        </div>
+            <div className="navbar-collapse">
+                <div className="navbar-nav" style={{width: "200px"}}>
+                    <button style={{backgroundColor:"grey"}}>Nuestros Productos</button>
+                </div>
+                <div className="navbar-nav" style={{color: "white", width: "200px"}}>
+                    <button style={{backgroundColor:"grey"}}>Sobre Nosotros</button>
+                </div>
+                <div className="navbar-nav" style={{color: "white", width: "200px"}}>
+                    <button style={{backgroundColor:"grey"}}>Contactanos</button>
+                </div>
+                <div className="navbar-nav" style={{color: "white", width: "200px"}}>
+                    <button style={{backgroundColor:"grey"}}><img src={carrito} alt="" style={{width: "100px", height: "60px"}} /></button>
+                </div>
+            </div>
+        </nav>
     )
 }
-
-export default NavBar
